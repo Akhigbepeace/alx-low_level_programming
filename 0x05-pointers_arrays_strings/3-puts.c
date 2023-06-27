@@ -1,16 +1,19 @@
 #include "main.h"
-
 /**
-  * _puts - prints a string followed by a new line to stdout
-  * @str: strign to print
-*/
-
+ * _puts - prints
+ * @str: the string
+ *mederhoo
+ * Return: 0
+ */
 void _puts(char *str)
 {
-	while (*str != '\0')
+	int a = 0;
+
+	while (str[a] != '\0')
 	{
-		_putchar(@str++);
+		putchar(str[a]);
+		a++;
 	}
 
-	_putchar('\n');
+	putchar('\n');
 }
